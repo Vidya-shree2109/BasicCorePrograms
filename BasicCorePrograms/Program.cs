@@ -8,7 +8,7 @@ namespace BasicCorePrograms
         {
             Console.WriteLine("----------Welcome To Basic Programs----------");
             bool finish = true;
-            Console.WriteLine("\n1.Flip Coin\n2.Leap Year\n3.Power Of Two\n4.Harmonic Number\n5.Find Prime Factor\n6.End the program");
+            Console.WriteLine("\n1.Flip Coin\n2.Leap Year\n3.Power Of Two\n4.Harmonic Number\n5.Find Prime Factor\n6.Quotient And Remainder\n7.End the program");
             while(finish)
             {
                 Console.WriteLine("\nEnter an option to execute :");
@@ -34,7 +34,11 @@ namespace BasicCorePrograms
                         PrimeFactors factor = new PrimeFactors();
                         factor.FindFactor();
                         break;
-                    case 6: finish = false;
+                    case 6:
+                        QuotientAndRemainder rem = new QuotientAndRemainder();
+                        rem.FindQuotientRemainder();
+                        break;
+                    case 7: finish = false;
                         break;
 
                     default: Console.WriteLine("Enter a valid option !");
