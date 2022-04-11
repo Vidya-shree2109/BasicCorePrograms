@@ -8,7 +8,7 @@ namespace BasicCorePrograms
         {
             Console.WriteLine("----------Welcome To Basic Programs----------");
             bool finish = true;
-            Console.WriteLine("\n1.Flip Coin\n2.Leap Year\n3.Power Of Two\n4.Harmonic Number\n5.Find Prime Factor\n6.Quotient And Remainder\n7.End the program");
+            Console.WriteLine("\n1.Flip Coin\n2.Leap Year\n3.Power Of Two\n4.Harmonic Number\n5.Find Prime Factor\n6.Quotient And Remainder\n7.Swap Two Numbers\n8.End the program");
             while(finish)
             {
                 Console.WriteLine("\nEnter an option to execute :");
@@ -38,7 +38,11 @@ namespace BasicCorePrograms
                         QuotientAndRemainder rem = new QuotientAndRemainder();
                         rem.FindQuotientRemainder();
                         break;
-                    case 7: finish = false;
+                    case 7:
+                        SwapTwoNumbers swap = new SwapTwoNumbers();
+                        swap.NumberSwap();
+                        break;
+                    case 8: finish = false;
                         break;
 
                     default: Console.WriteLine("Enter a valid option !");
