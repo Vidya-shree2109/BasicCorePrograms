@@ -8,10 +8,10 @@ namespace BasicCorePrograms
         {
             Console.WriteLine("----------Welcome To Basic Programs----------");
             bool finish = true;
-            Console.WriteLine("\n1.Flip Coin\n2.Leap Year\n3.Power Of Two\n4.Harmonic Number\n5.Find Prime Factor\n6.Quotient And Remainder\n7.Swap Two Numbers\n8.End the program");
+            Console.WriteLine("\n1.Flip Coin\n2.Leap Year\n3.Power Of Two\n4.Harmonic Number\n5.Find Prime Factor\n6.Quotient And Remainder\n7.Swap Two Numbers\n8.Even Or Odd\n9.End the program");
             while(finish)
             {
-                Console.WriteLine("\nEnter an option to execute :");
+                Console.Write("\nEnter an option to execute :");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
                 {
@@ -42,7 +42,11 @@ namespace BasicCorePrograms
                         SwapTwoNumbers swap = new SwapTwoNumbers();
                         swap.NumberSwap();
                         break;
-                    case 8: finish = false;
+                    case 8:
+                        EvenOrOdd even = new EvenOrOdd();
+                        even.FindEvenOrOdd();
+                        break;
+                    case 9: finish = false;
                         break;
 
                     default: Console.WriteLine("Enter a valid option !");
