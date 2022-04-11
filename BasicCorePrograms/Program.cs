@@ -8,7 +8,7 @@ namespace BasicCorePrograms
         {
             Console.WriteLine("----------Welcome To Basic Programs----------");
             bool finish = true;
-            Console.WriteLine("\n1.Flip Coin\n2.Leap Year\n3.Power Of Two\n4.End the program");
+            Console.WriteLine("\n1.Flip Coin\n2.Leap Year\n3.Power Of Two\n4.Harmonic Number\n5.End the program");
             while(finish)
             {
                 Console.WriteLine("\nEnter an option to execute :");
@@ -26,7 +26,11 @@ namespace BasicCorePrograms
                         PowerOfTwo power = new PowerOfTwo();
                         power.TwoPower();
                         break;
-                    case 4: finish = false;
+                    case 4:
+                        HarmonicNumber harmonicvalue = new HarmonicNumber();
+                        harmonicvalue.FindHarmonic();
+                        break;
+                    case 5: finish = false;
                         break;
 
                     default: Console.WriteLine("Enter a valid option !");
