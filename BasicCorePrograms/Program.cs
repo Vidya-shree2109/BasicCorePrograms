@@ -8,7 +8,7 @@ namespace BasicCorePrograms
         {
             Console.WriteLine("----------Welcome To Basic Programs----------");
             bool finish = true;
-            Console.WriteLine("\n1.Flip Coin\n2.Leap Year\n3.Power Of Two\n4.Harmonic Number\n5.End the program");
+            Console.WriteLine("\n1.Flip Coin\n2.Leap Year\n3.Power Of Two\n4.Harmonic Number\n5.Find Prime Factor\n6.End the program");
             while(finish)
             {
                 Console.WriteLine("\nEnter an option to execute :");
@@ -30,7 +30,11 @@ namespace BasicCorePrograms
                         HarmonicNumber harmonicvalue = new HarmonicNumber();
                         harmonicvalue.FindHarmonic();
                         break;
-                    case 5: finish = false;
+                    case 5:
+                        PrimeFactors factor = new PrimeFactors();
+                        factor.FindFactor();
+                        break;
+                    case 6: finish = false;
                         break;
 
                     default: Console.WriteLine("Enter a valid option !");
